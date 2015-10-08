@@ -1,19 +1,34 @@
 //your code here
 void setup()
 {
-	//your code here
+	size(400);
+	background(0);
 }
 void draw()
 {
 	//your code here
 }
-class NormalParticle
+class NormalParticle implements Particle
 {
-	//your code here
+	double x, y, speed, angle;
+	int color c;
+	NormalParticle() {
+		c = color(Math.random()*255)
+		x = 200;
+		y = 200;
+		speed = 10;
+		angle = Math.random()*2* PI;
+	}
+	void move() {
+		x = Math.cos()
+	}
+	void show() {
+
+	}
 }
 interface Particle
 {
-	//your code here
+	public void show();
 }
 class OddballParticle //uses an interface
 {
