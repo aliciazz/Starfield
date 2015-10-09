@@ -20,7 +20,8 @@ class NormalParticle implements Particle
 		angle = Math.random()*2* PI;
 	}
 	void move() {
-		x = Math.cos()
+		x += Math.cos(angle)*speed;
+		y += Math.sin(angle)*speed;
 	}
 	void show() {
 
@@ -30,9 +31,17 @@ interface Particle
 {
 	public void show();
 }
-class OddballParticle //uses an interface
+class OddballParticle implements Particle
 {
-	//your code here
+	
+	void move()
+	{
+
+	}
+	void draw()
+	{
+		
+	}
 }
 class JumboParticle //uses inheritance
 {
